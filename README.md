@@ -1,4 +1,6 @@
 _This project has been created as part of the 42 curriculum by jfox_
+# get_next_line
+A more advanced function for reading documents one line at a time. For School 42.
 
 ## __DESCRIPTION__
 
@@ -10,7 +12,7 @@ GNL will not print that line by itself, use a custom main with a printf type fun
 
 ## __INSTRUCTIONS__
 
-Write a main and compile it with cc -Wall -Wextra -Werror main.c get_nextline.c get_next_line_utils.c
+Write a main and compile it with cc -Wall -Wextra -Werror main.c get_next_line.c get_next_line_utils.c
 You can add -D BUFFER_SIZE=* To set a custom BUFFER_SIZE when using the program. Default is 25.
 
 _For the Bonus add _bonus to each document being compiled._
@@ -22,6 +24,8 @@ The file descriptor given can be 0 to give input from the command line.
 Stdio.h and printf can be used in a loop to print the results of repeated calls of get_next_line(fd), where the fd is file descriptor pointing to our .txt file.
 
 Inside the main do not forget to free the line being printed to avoid errors with Valgrind.
+
+(This repo contains an example main, to show the use of GNL in a practical way. Note the 'test' text files referenced in that main are not included in the repo.)
 
 ## __RESOURCES__
 
